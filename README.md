@@ -2,7 +2,7 @@
    
 ![image](https://github.com/kubade123/gg-midterm/assets/86041365/f2ca25b1-9782-470f-b32f-b8cf6d8739b5)
 
-In this version i'm still using models to define my databases (I haven't connected it to an external database)  
+**In this version i'm still using models to define my databases (I haven't connected it to an external database)**  
 There are two models, videos and products. I include comment as one of the video's property.
 
 # API Structure
@@ -85,49 +85,90 @@ There are two models, videos and products. I include comment as one of the video
 - **Error Response:**  
      - **Code:** 404
      - **Content:**
-  ```
-   {
-      status: 'Fail',
-      message: 'Product tidak ditemukan',
-    }
-   ```
-     OR
-  ```
-       {
-      status: 'Fail',
-      message: 'Video tidak ditemukan',
-    }
-  ```
+        ```
+         {
+            status: 'Fail',
+            message: 'Product tidak ditemukan',
+          }
+         ```
+        OR
+        ```
+             {
+            status: 'Fail',
+            message: 'Video tidak ditemukan',
+          }
+        ```
   
 ## GET /products/:videoId
 - **URL Params**  
-  None
+  _Required_: ```id=[integer]```
 - **Data Params**  
   None
 - **Headers**  
   Content-Type: application/json
 - **Success Response:**  
-- **Code**  
-  **Content:**  
+- **Code:** 200    
+  **Content:**
+  ```
+  {
+    "status": "success",
+    "message": "Berikut adalah productnya",
+    "productList": [
+        {
+            "id": 104,
+            "videoId": 3,
+            "title": "HyperX Cloud II Wireless",
+            "productLink": "https://www.tokopedia.com/hyperxofficial/hyperx-cloud-ii-wireless-gaming-headset",
+            "price": 2490000
+        },
+        {
+            "id": 105,
+            "videoId": 3,
+            "title": "HyperX Cloud Alpha S",
+            "productLink": "https://www.tokopedia.com/hyperxofficial/hyperx-cloud-alpha-s-gaming-headset-blue",
+            "price": 1600000
+        }
+    ]
+  }
 - **Error Response:**  
-     - **Code:**
- 
-
+     - **Code:** 404
+     - **Content:**
+       ```
+       {
+         status: 'Fail',
+         message: `Product tidak ditemukan`,
+       }
 ## GET /videos/:id/comments
 - **URL Params**  
-  None
+  _Required_: ```id=[integer]```
 - **Data Params**  
   None
 - **Headers**  
   Content-Type: application/json
 - **Success Response:**  
-- **Code**  
-  **Content:**  
+- **Code:** 200  
+  **Content:**
+  ```
+  {
+    "status": "success",
+    "message": "Berikut adalah comment list untuk video mouse",
+    "commentList": [
+        {
+            "username": "burunghantu123",
+            "comment": "Iki yo apik rek",
+            "createdAt": "2023-07-28T04:16:33.423Z"
+        }
+    ]
+  } 
 - **Error Response:**  
-     - **Code:**
- 
-
-## GET /videos/:id/comments
+     - **Code:** 404
+     - **Content:**
+  ```
+   {
+    "status": "Fail",
+    "message": "Video tidak ditemukan"
+  }
+## POST /videos/:id/comments
 - **URL Params**  
   None
 - **Data Params**  
