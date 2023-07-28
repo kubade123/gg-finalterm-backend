@@ -172,14 +172,44 @@ There are two models, videos and products. I include comment as one of the video
 - **URL Params**  
   _Required_: ```id=[integer]```
 - **Data Params**  
-  None
+  ```
+  {
+    "username": string,
+    "comment" : string
+  }
 - **Headers**  
   Content-Type: application/json
 - **Success Response:**  
-- **Code**  
-  **Content:**  
+- **Code:** 200    
+  **Content:**
+  ```
+  {
+        status: 'success',
+        message: 'Comment berhasil ditambahkan',
+        comment: newComment,
+  }  
 - **Error Response:**  
-     - **Code:**
-
+     - **Code:** 404
+     - **Content**
+  ```
+  {
+     status: 'Fail',
+     message: 'username kosong',
+  }
+     
+     ```
+     OR
+     ```
+     {
+        status: 'Fail',
+        message: 'Tulis komen Anda',
+     }
+     ```
 # How to run guide
-
+```
+1. Clone this repo to local
+2. Run `npm install` on terminal
+4. Run `npm start` on terminal
+5. Open `http://localhost:3000` on your browser
+6. Test the API
+7. I hope it works correctly!
