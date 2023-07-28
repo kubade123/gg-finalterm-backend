@@ -213,3 +213,8 @@ There are two models, videos and products. I include comment as one of the video
 5. Open `http://localhost:3000` on your browser
 6. Test the API
 7. I hope it works correctly!
+```
+
+# To Be Added
+
+- [] Connect to MongoDB
