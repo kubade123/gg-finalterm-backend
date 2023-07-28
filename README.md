@@ -217,4 +217,4 @@ There are two models, videos and products. I include comment as one of the video
 
 # To Be Added
 
-- [] Connect to MongoDB
+- [ ] Connect to MongoDB
