@@ -170,7 +170,7 @@ There are two models, videos and products. I include comment as one of the video
   }
 ## POST /videos/:id/comments
 - **URL Params**  
-  None
+  _Required_: ```id=[integer]```
 - **Data Params**  
   None
 - **Headers**  
@@ -181,9 +181,5 @@ There are two models, videos and products. I include comment as one of the video
 - **Error Response:**  
      - **Code:**
 
-
-
-2. API structure
-3. List API request and response
-4. How to run guide
+# How to run guide
 
