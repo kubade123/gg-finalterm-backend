@@ -101,7 +101,7 @@ There are two models, videos and products. I include comment as one of the video
   
 ## GET /products/:videoId
 - **URL Params**  
-  _Required_: ```id=[integer]```
+  _Required_: ```videoId=[integer]```
 - **Data Params**  
   None
 - **Headers**  
