@@ -1,8 +1,20 @@
+# GigihPlay - a wanna be clone of tokopedia play
+
+GigihPlay is a finalterm project that i work on from Generasi GIGIH 3.0. Tech stack used for the backend is Javascript, NodeJS, and MongoDB.
+
+## Installation
+
+Clone this repository and use the package manager npm to install from terminal inside the directory.
+
+```bash
+npm install
+```
 # Database structure
    
 ![image](https://github.com/kubade123/gg-midterm/assets/86041365/f2ca25b1-9782-470f-b32f-b8cf6d8739b5)
 
-There are two models, videos and products. I include comment as one of the video's property.
+Database used for this project is MongoDB for its flexibility and scalability as a NoSQL database.
+There are two models, videos and products. I include comment as one of the video's property to make it easier to manage.
 
 # API Structure
 ## GET /videos
