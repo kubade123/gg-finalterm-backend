@@ -1,5 +1,0 @@
-1. Sorting
-2. category for videos
-3. most popular videos
-4. most popular product
-5. 

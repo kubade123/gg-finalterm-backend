@@ -1,10 +1,21 @@
 const { express } = require('../../app');
 const {
   getAllVideosHandler, getProductsByVideoIdHandler,
-  getAllCommentsHandler, addCommentbyVideoIdHandler, getVideoDetailByVideoIdHandler,
+  getAllCommentsHandler, addCommentbyVideoIdHandler,
+  getVideoDetailByVideoIdHandler, addVideoHandler, addProductHandler,
 } = require('../controllers/handler');
 
 const router = express.Router();
+
+// Menambahkan sebuah video
+router.post('/videos', (req, res) => {
+  addVideoHandler(req, res);
+});
+
+// Menambahkan sebuah product
+router.post('/products/:videoId', (req, res) => {
+  addProductHandler(req, res);
+});
 
 // Menampilkan list semua video
 router.get('/videos', (req, res) => {
