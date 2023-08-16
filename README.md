@@ -2,7 +2,6 @@
    
 ![image](https://github.com/kubade123/gg-midterm/assets/86041365/f2ca25b1-9782-470f-b32f-b8cf6d8739b5)
 
-**In this version i'm still using models to define my databases (I haven't connected it to an external database)**  
 There are two models, videos and products. I include comment as one of the video's property.
 
 # API Structure
