@@ -204,13 +204,42 @@ There are two models, videos and products. I include comment as one of the video
         message: 'Tulis komen Anda',
      }
      ```
-# How to run guide
-```
-1. Clone this repo to local
-2. Run `npm install` on terminal
-4. Run `npm start` on terminal
-5. Open `http://localhost:3000` on your browser
-6. Test the API
-7. I hope it works correctly!
-```
+## POST /videos
+- **URL Params**  
+  none
+- **Data Params**  
+  ```
+  {
+    "title": string,
+    "thumbnailURL" : string
+  }
+- **Headers**  
+  Content-Type: application/json
+- **Success Response:**  
+- **Code:** 200    
+  **Content:**
+  ```
+  {}  
+- **Error Response:**  
+     - **Code:** 404
+
+## POST /products/:videoId
+- **URL Params**  
+  _Required_: ```videoId=[integer]```
+- **Data Params**  
+  ```
+  {
+    "name": string,
+    "productLink" : string,
+    "price" : number,
+  }
+- **Headers**  
+  Content-Type: application/json
+- **Success Response:**  
+- **Code:** 200    
+  **Content:**
+  ```
+  {}  
+- **Error Response:**  
+     - **Code:** 404
 
