@@ -215,6 +215,3 @@ There are two models, videos and products. I include comment as one of the video
 7. I hope it works correctly!
 ```
 
-# To Be Added
-
-- [ ] Connect to MongoDB
