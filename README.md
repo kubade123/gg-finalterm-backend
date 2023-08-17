@@ -4,11 +4,32 @@ GigihPlay is a finalterm project that i work on from Generasi GIGIH 3.0. Tech st
 
 ## Installation
 
-Clone this repository and use the package manager npm to install from terminal inside the directory.
+Clone this repository 
+```
+https://github.com/kubade123/gg-finalterm-backend.git
+```
+
+navigate to the directory
+```bash
+cd gg-finalterm-backend
+```
+
+Use the package manager npm to install from terminal inside the directory.
 
 ```bash
 npm install
 ```
+
+run the express server
+```
+npm start
+```
+
+test the api on  your [localhost](http://127.0.0.1:3000)
+
+the express server now run , you can run the frontend react
+
+
 # Database structure
    
 ![image](https://github.com/kubade123/gg-midterm/assets/86041365/f2ca25b1-9782-470f-b32f-b8cf6d8739b5)
